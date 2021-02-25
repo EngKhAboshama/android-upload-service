@@ -10,7 +10,7 @@ class HurlStack @JvmOverloads constructor(
     private val followRedirects: Boolean = true,
     private val useCaches: Boolean = false,
     private val connectTimeoutMillis: Int = 1000,
-    private val readTimeoutMillis: Int = 30000
+    private val readTimeoutMillis: Int = 1000
 ) : HttpStack {
 
     @Throws(IOException::class)
